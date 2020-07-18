@@ -6,7 +6,7 @@ from joystick import Joystick
 app = Flask(__name__)
 api = Api(app)
 
-api.add_resource(Joystick, '/joystick/<int:x>/<int:y>')
+api.add_resource(Joystick, '/joystick')
 
 if __name__ == '__main__':
     app.run(debug=True)
