@@ -1,7 +1,22 @@
-restGetControlState = 'get_control_state'
+restControlState = 'control_state'
+restVolume = 'volume'
+restControlMode = 'control_mode'
+restEmergencyStop = 'emergency_stop'
+restJoystickValues = 'joystick_values'
+restLightOn = 'light_on'
+restDrivingUser = 'driving_user'
+restBatteryState = 'battery'
+restError = 'error'
+restVelocity = 'velocity'
 
-restSetVolume = 'set_volume'
-restSetControlMode = 'set_control_mode'
-restSetEmergencyStop = 'set_emergency_stop'
-restSetJoystickValues = 'set_joystick_values'
-restSetLightsOn = 'set_lights_on'
+
+def bool_to_int(value):
+    inp = 0
+    if value:
+        inp = 1
+    return inp
+
+def int_to_bool(value):
+    if value == 0:
+        return False
+    return True
