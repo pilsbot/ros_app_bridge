@@ -1,7 +1,15 @@
 
 import sqlite3
 
-database_path = "../database/database.db"
+database_path = '../database/database.db'
+table_control_mode = 'control_mode'
+table_emergency_stop = 'emergency_stop'
+table_velocity = 'velocity'
+table_battery = 'battery'
+table_driver = 'driver'
+table_light = 'light'
+table_volume = 'volume'
+
 
 def select_one(table):
     db =  sqlite3.connect(database_path)
